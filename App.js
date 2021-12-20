@@ -1,10 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { LoginView } from './views/LoginView';
 import { AuthProvider } from './providers/AuthProvider';
 import { LinksView } from './views/LinksView';
+import { Logout } from "./components/Logout";
+import { LinksProvider } from './providers/LinksProvider';
 
 const Stack = createStackNavigator();
 
@@ -19,10 +20,13 @@ export default function App() {
               options={{ title: "Read it Later - Maybe" }}
             />
           <Stack.Screen
-              name="Links">
+              name="Links"
+             >
                {() => {
                 return (
-                  <LinksView />
+                  <LinksProvider>
+                    <LinksView />
+                  </LinksProvider>
                 );
               }} 
           </Stack.Screen>
