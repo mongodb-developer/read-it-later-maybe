@@ -17,7 +17,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.realm.read-later-maybe"
     },
     "android": {
       "adaptiveIcon": {
