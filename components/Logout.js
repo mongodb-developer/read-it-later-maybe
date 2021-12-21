@@ -9,9 +9,9 @@ export function Logout( {closeRealm} ) {
 
   return (
     <Button
-      title="Log Out"
+      title="Logout"
       onPress={() => {
-        Alert.alert("Log Out", null, [
+        Alert.alert("Log Out?", null, [
           {
             text: "Yes, Log Out",
             style: "destructive",

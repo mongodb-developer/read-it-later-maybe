@@ -64,7 +64,7 @@ export function LinksView() {
             value={linkURL}
           />
           <Button
-                title='Click!'
+                title='Add Link!'
                 color='red'
                 onPress={ () => { createLink(linkDescription, linkURL); }}
                 />
