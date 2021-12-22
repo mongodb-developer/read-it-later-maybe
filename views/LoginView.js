@@ -31,7 +31,7 @@ export function LoginView({ navigation }) {
   // The onPressSignUp method calls AuthProvider.signUp with the
   // email/password in state and then signs in.
   const onPressSignUp = async () => {
-    console.log("Trying signup with user: " + email);
+    console.log("Trying Sign Up with user: " + email);
     try {
       await signUp(email, password);
       signIn(email, password);
@@ -44,7 +44,7 @@ export function LoginView({ navigation }) {
 
   return (
     <View>
-      <Text>Signup or Signin:</Text>
+      <Text>Sign Up or Sign In:</Text>
       <View style={styles.inputContainer}>
         <TextInput
           onChangeText={setEmail}
